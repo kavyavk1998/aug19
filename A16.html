@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <button onclick="myFunction()">Try it</button> wait for 4 sec to display hello<br />
+    <button onclick="myStopFunction()">Stop the alert</button> if you donot want to display click this button
+
+    <script>
+
+    var myVar;
+
+function myFunction() {
+    myVar = setTimeout(
+        function () {
+            alert("Hello");
+        }, 4000);
+}
+
+function myStopFunction() {
+  clearTimeout(myVar);
+}
+    </script>
+</body>
+</html>

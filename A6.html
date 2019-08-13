@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function parallelArr() {
+            var i, t = 0;
+            var planets = ["mercury", "venus", "earth", "mars"];
+            var distance = ["36million miles", "67million miles", " 93million miles", "141milion miles"];
+            var diameter = ["3,100 miles", "7,700 miles", "7,920 miles", " 4,200 miles"];
+            var n = document.getElementById('n1').value;
+            for (i = 0; i < planets.length; i++) {
+                if (n === planets[i]) {
+                    /**alert(diameter[i]);**/
+                    t = 1;
+                    break;
+
+                }
+            }
+
+            if (t == 1) {
+                document.getElementById('demo').innerHTML = n + " the distance is " + distance[i] + " and the diameter is " + diameter[i];
+            }
+            else {
+                document.getElementById('demo').innerHTML = n + " distance and diameter not yet updated";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1> solar system</h1>
+    <div>
+       enter the planet name:  <input type="text" id="n1" />
+               
+                    <br>
+                    <br>
+               
+                 <input type="button" value="submit" onclick="parallelArr()" />
+            
+                    <div id="demo"></div>
+                    <br>
+                    <br>
+             
+
+       
+    </div>
+</body>
+
+</html>

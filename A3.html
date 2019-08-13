@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Regular Expressions</title>
+    <script type="text/javascript">
+        function numNo() {
+            var number = document.getElementById('n1').value;
+            var number1 = parseInt(number.replace(/[^0-9\.]+/g, ""));
+            //var real= Number(number.replace(/[^0-9\.]+/g,""));
+            //var unary = +(number.replace(/[^0-9\.]+/g, ""));
+            //var multiply = (number.replace(/[^0-9\.]+/g, "")) * 1;
+            window.document.getElementById('demo').innerHTML = number + " is the given string and after converting using parse int "
+                + number1; /*+ " using number function " + real+ " using unary operator "+unary+" using multiplying opeartor "+ multiply;*/
+
+        }
+    </script>
+
+</head>
+<body>
+    <h1> NUMBER() AND INT PARSE FUNCTIONS</h1>
+    <div>
+       
+                 enter the number:  <input type="text" id="n1" />
+                
+                    <br>
+                    <br>
+          
+               <input type="button" value="convert to number" id="btnAdd" onclick="numNo()" />
+
+             
+                    <div id="demo"></div>
+                    <br>
+        
+    </div>
+</body>
+</html>

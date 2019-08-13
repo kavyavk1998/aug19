@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function parallelArr() {
+            var i;
+            var emp = ["Bhavana", "Sudhakara", "Sreedevi", "Srinivas", "Chaitu", "Shailu",
+                "satish", "sravani", "Kavya", "Manasa", "vijay", "Samhith",
+                "keerthi", "Mounica", "Vaishnavi", "suhail", "Sasi", "Vikram",
+                "Sahana", "Yashu"];
+            var dept = ["hr", "training", "infra", "admin", "finance", "marketing",
+                "sales", "security", "travel", "r&d", "engineering",
+                "hr", "admin", "pr", "training", "infra", "etg", "etg",
+                "finance", "marketing"];
+
+            document.write("<table>");
+            document.write("<tr>");
+            document.write("<th> EMP NAME</th>");
+            document.write("<th> DEPT NAME</th>");
+             document.write("</tr>");
+
+            for (i = 0; i < emp.length; i++) {
+
+
+                   document.write("<tr>");
+            document.write("<td>"+emp[i]+"</td>");
+             document.write("<td>"+dept[i]+"</td>");
+             document.write("</tr>");
+
+            }
+               document.write("</table>");
+
+        }
+
+    </script>
+
+</head>
+<body>
+    <h1> employee details</h1>
+    <div>
+        <table cellpadding="10" cellspacing="10" align="center">
+
+            <tr>
+                <td><center> <input type="button" value="click to view emp details " onclick="parallelArr()" /></center></td>
+            <tr>
+                <td>
+                    <div id="demo"></div>
+                    <br>
+                    <br>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>

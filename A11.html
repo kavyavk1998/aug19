@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function radioButton() {
+            var div = document.getElementById("resultDiv");
+            var div1 = document.getElementById("resultDiv1");
+            var div2 = document.getElementById("resultDiv2");
+            var div3 = document.getElementById("resultDiv3");
+            if (radio.checked == true) {
+                div.innerHTML = "Kavya Sarma"
+               
+            }
+            if (radio1.checked == true) {
+                div1.innerHTML = "Bhavana Sarma"
+               
+            }
+            if (radio2.checked == true) {
+                div2.innerHTML = "Sudhakara Sarma"
+               
+            }
+            if (radio3.checked == true) {
+                div3.innerHTML = "Sreedevi Sarma"
+               
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <input type="radio" name="radio" id="radio" onclick="radioButton()"> radio
+    <div id="resultDiv">Kavya</div>
+    <input type="radio" name="radio" id="radio1" onclick="radioButton()"> radio1
+    <div id="resultDiv1">Bhavana</div>
+    <input type="radio" name="radio" id="radio2" onclick="radioButton()"> radio2
+    <div id="resultDiv2">Sudha</div>
+    <input type="radio" name="radio" id="radio3" onclick="radioButton()"> radio3
+    <div id="resultDiv3">Sree</div>
+   
+
+
+</body>
+</html>

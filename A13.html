@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function validateform() {
+            if (!(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/).test(document.form1.e1.value)) {
+                alert("ENTER VALID EMAIL ID");
+                document.form1.e1.focus();
+                return false;
+            }
+            else
+                alert("Thank you");
+        }
+    </script>
+</head>
+<body>
+    <h1> Email validation</h1>
+    <form name="form1" method="post" onsubmit="return validateform()">
+       
+
+
+           
+                    EMail Id:
+
+                    <input name="e1" required type="text" id="e1" placeholder="abc@xyz.com" />
+
+                    <input type="submit" value="Submit">
+               
+               
+    </form>
+</body>
+</html>
+
